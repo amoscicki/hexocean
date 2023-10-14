@@ -2,7 +2,6 @@ import datetime
 from rest_framework import serializers
 from .models import Image, Link
 from .utils import generate_thumbnail
-from django.shortcuts import request
 
 class ImageSerializer(serializers.ModelSerializer):
 
