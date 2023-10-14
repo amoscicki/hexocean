@@ -74,6 +74,6 @@ class LinkSerializer(serializers.ModelSerializer):
     
     def to_representation(self, instance):
         representation = super().to_representation(instance)
-        representation['link'] = request.build_absolute_uri(instance.link)
+        representation['link'] = instance.link
         return representation
         
