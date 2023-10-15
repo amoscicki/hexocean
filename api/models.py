@@ -1,10 +1,10 @@
 from django.db import models
-from accounts.models import CustomUser, Thumbnail_size
 from django.utils import timezone
+from accounts.models import CustomUser
 
 # Create your models here.
 def get_upload_path(instance, filename):
-    return f'{instance.user.id}/{timezone.now().date()}/{filename}'
+    return f'{instance.user.id}/{filename}'
 
 class Image(models.Model):
     user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
@@ -16,10 +16,9 @@ class Image(models.Model):
 
 
 class Link(models.Model):
-    image = models.ForeignKey(Image, on_delete=models.PROTECT)
-    link = models.URLField(null=False, blank=False)
+    image = models.ForeignKey(Image, on_delete=models.CASCADE)
     created_at = models.DateTimeField(null=False, blank=False)
     expires_at = models.DateTimeField(null=False, blank=False)
 
     def __str__(self):
-        return self.link
+        return f'{self.id}'

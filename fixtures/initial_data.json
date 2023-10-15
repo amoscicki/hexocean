@@ -1,1 +1,110 @@
-[{"model": "accounts.thumbnail_size", "pk": 200, "fields": {}}, {"model": "accounts.thumbnail_size", "pk": 400, "fields": {}}, {"model": "accounts.plan", "pk": 1, "fields": {"name": "Basic", "expiring_link": false, "original_available": false, "thumbnail_sizes": []}}, {"model": "accounts.plan", "pk": 2, "fields": {"name": "Premium", "expiring_link": false, "original_available": true, "thumbnail_sizes": []}}, {"model": "accounts.plan", "pk": 3, "fields": {"name": "Enterprise", "expiring_link": true, "original_available": true, "thumbnail_sizes": []}}, {"model": "accounts.customuser", "pk": 1, "fields": {"password": "pbkdf2_sha256$600000$EsBMgf2wnAHZ88Qu4n1Iur$Gb/hPPDWpt9Fb/30C4O6Yxlo4LkNi/RunWrNyiOLLyg=", "last_login": "2023-10-14T11:31:13.596Z", "is_superuser": true, "username": "admin", "first_name": "", "last_name": "", "email": "admin@admin.admin", "is_staff": true, "is_active": true, "date_joined": "2023-10-14T11:31:05.086Z", "plan": null, "groups": [], "user_permissions": []}}, {"model": "accounts.customuser", "pk": 2, "fields": {"password": "Basic", "last_login": null, "is_superuser": false, "username": "Basic", "first_name": "", "last_name": "", "email": "", "is_staff": false, "is_active": true, "date_joined": "2023-10-14T11:32:26Z", "plan": 1, "groups": [], "user_permissions": []}}, {"model": "accounts.customuser", "pk": 3, "fields": {"password": "Premium", "last_login": null, "is_superuser": false, "username": "Permium", "first_name": "", "last_name": "", "email": "", "is_staff": false, "is_active": true, "date_joined": "2023-10-14T11:32:51Z", "plan": 2, "groups": [], "user_permissions": []}}, {"model": "accounts.customuser", "pk": 4, "fields": {"password": "Enterprise", "last_login": null, "is_superuser": false, "username": "Enterprise", "first_name": "", "last_name": "", "email": "", "is_staff": false, "is_active": true, "date_joined": "2023-10-14T11:33:08Z", "plan": 3, "groups": [], "user_permissions": []}}]
+[
+  { "model": "accounts.thumbnail_size", "pk": 200, "fields": {} },
+  { "model": "accounts.thumbnail_size", "pk": 400, "fields": {} },
+  {
+    "model": "accounts.plan",
+    "pk": 1,
+    "fields": {
+      "name": "Basic",
+      "expiring_link": false,
+      "original_available": false,
+      "thumbnail_sizes": [200]
+    }
+  },
+  {
+    "model": "accounts.plan",
+    "pk": 2,
+    "fields": {
+      "name": "Premium",
+      "expiring_link": false,
+      "original_available": true,
+      "thumbnail_sizes": [200, 400]
+    }
+  },
+  {
+    "model": "accounts.plan",
+    "pk": 3,
+    "fields": {
+      "name": "Enterprise",
+      "expiring_link": true,
+      "original_available": true,
+      "thumbnail_sizes": [200, 400]
+    }
+  },
+  {
+    "model": "accounts.customuser",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$EsBMgf2wnAHZ88Qu4n1Iur$Gb/hPPDWpt9Fb/30C4O6Yxlo4LkNi/RunWrNyiOLLyg=",
+      "last_login": "2023-10-14T11:31:13.596Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@admin.admin",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-10-14T11:31:05.086Z",
+      "plan": 3,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.customuser",
+    "pk": 2,
+    "fields": {
+      "password": "Basic",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Basic",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-10-14T11:32:26Z",
+      "plan": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.customuser",
+    "pk": 3,
+    "fields": {
+      "password": "Premium",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Permium",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-10-14T11:32:51Z",
+      "plan": 2,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.customuser",
+    "pk": 4,
+    "fields": {
+      "password": "Enterprise",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Enterprise",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-10-14T11:33:08Z",
+      "plan": 3,
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]
