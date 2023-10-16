@@ -3,3 +3,8 @@ __pycache__/
 *.py[cod]
 venv
 images/
+*.gif
+*.png
+*.jpg
+*.jpeg
+*.bmp
