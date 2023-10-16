@@ -1,5 +1,4 @@
 from django.db import models
-from django.utils import timezone
 from accounts.models import CustomUser
 
 # Create your models here.
@@ -21,4 +20,4 @@ class Link(models.Model):
     expires_at = models.DateTimeField(null=False, blank=False)
 
     def __str__(self):
-        return f'{self.id}'
+        return f'{self.image.image.name} - {self.created_at} - {self.expires_at}'

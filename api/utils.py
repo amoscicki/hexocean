@@ -2,11 +2,6 @@ from io import BytesIO
 from PIL import Image as PILImage
 from django.conf import settings
 from django.core.files.uploadedfile import InMemoryUploadedFile
-from rest_framework import serializers
-import base64
-import hashlib
-import hmac
-import time
 
 def generate_thumbnail(image, height):
     # resize image to thumbnail, using format from original image

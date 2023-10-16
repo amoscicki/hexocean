@@ -1,16 +1,12 @@
 from rest_framework.test import APITestCase, APIClient
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.contrib import auth
-from django.contrib.auth.models import User
-from django.test import TestCase, Client
+from django.test import TestCase
 from accounts.models import CustomUser, Plan, Thumbnail_size
 from django.urls import reverse, resolve
 from api.views import ImageViewSet, GenerateExpiringLinkViewSet, ExpiringLinkViewSet
-from api.models import Image, Link
-from django.core.validators import URLValidator
 import PIL.Image as PILImage
 from io import BytesIO
-import json
 
 PASSED_STR = '\033[92m PASSED \033[0m'
 FAILED_STR = '\033[91m FAILED \033[0m'
