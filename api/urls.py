@@ -9,6 +9,6 @@ router.register(r'images', ImageViewSet)
 router.register(r'gen_exp_link', GenerateExpiringLinkViewSet)
 
 urlpatterns = [
-    path('', include(router.urls)),
-    path('templink/<id>', ExpiringLinkViewSet.as_view())
+    path('api/', include(router.urls)),
+    path('templink/<id>', ExpiringLinkViewSet.as_view(), name='templink')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
